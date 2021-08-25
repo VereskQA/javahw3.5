@@ -23,13 +23,12 @@ class BookTest {
   @Test
   public void shouldNotCastToDifferentClass() {
     Product product = new Book();
-    TShirt shirt = (TShirt) product;
+    Smartphone phone = (Smartphone) product;
   }
 
   @Test
   public void shouldUseOverridedMethod() {
     Product product = new Book();
-    // Вопрос к аудитории: чей метод вызовется?
     product.toString();
   }
 }
