@@ -17,13 +17,7 @@ public class ProductManager {
     }
 
     public Product[] getAll() {
-        Product[] items = repository.getAll();
-        Product[] result = new Product[items.length];
-        for (int i = 0; i < result.length; i++) {
-            int index = items.length - i - 1;
-            result[i] = items[index];
-        }
-        return result;
+        return repository.getAll();
     }
 
     public Product[] searchBy(String text) {
