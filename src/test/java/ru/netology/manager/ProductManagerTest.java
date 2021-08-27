@@ -15,7 +15,7 @@ class ProductManagerTest {
     private Book coreJava = new Book(1, "Java", 15, "PhilCo");
     private Smartphone philips = new Smartphone(2, "Philips", 1500, "PhilCo");
     private Product johnsHat = new Product(3, "Hat", 153);
-    private Book lore = new Book(4, "PhilCoLore", 123312, "Act");
+    private Book lore = new Book(4, "PhilCoLores", 123312, "Act");
 
     @BeforeEach
     public void setUp() {
